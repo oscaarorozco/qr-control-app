@@ -1,4 +1,4 @@
-# 📱🔐 QR Control App
+# QR Control App
 
 Aplicación web para gestión operativa por usuario con flujo QR, administración de componentes y auditoría básica.
 
