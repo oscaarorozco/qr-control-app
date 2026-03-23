@@ -48,12 +48,6 @@ ADMIN_USERNAME=admin@example.local
 ADMIN_PASSWORD=replace_with_strong_password
 ```
 
-### 📝 Notas importantes
-
-* 🧩 En una instalación limpia se crean dos componentes activos por defecto: `componente1` y `componente2`.
-* 🔒 `JWT_SECRET` debe tener al menos 32 caracteres en entornos persistentes.
-* 🚫 No compartas `.env.local` ni bases SQLite reales.
-
 ---
 
 ## 🚀 Desarrollo
@@ -84,25 +78,6 @@ Para convertir datos locales a una demo genérica (usuarios, tokens, saldos y tr
 npm run anonymize:db
 ```
 
-### 🔧 Ruta personalizada
-
-```bash
-node scripts/anonymize-local-db.mjs data/app.db
-```
-
-* 💾 El script crea un backup automático `*.bak` antes de modificar la base.
-
----
-
-## 📤 Publicar en GitHub (Checklist)
-
-* ✅ Revisar que no exista `.env.local` en staging.
-* ✅ Revisar que no existan bases reales bajo `data/*.db*`.
-* ✅ Revisar que no existan uploads locales sensibles en `public/uploads/components`.
-* ✅ Ejecutar `npm run anonymize:db`.
-* ✅ Ejecutar `npm run lint` y `npm run build`.
-* ✅ Confirmar que el contenido de la demo es genérico.
-
 ---
 
 ## 🔐 Seguridad
@@ -113,13 +88,6 @@ node scripts/anonymize-local-db.mjs data/app.db
 * 🌐 Cabeceras HTTP de seguridad en producción.
 
 📢 Reporte responsable de vulnerabilidades: ver [SECURITY.md](SECURITY.md)
-
----
-
-## 🤝 Contribuir
-
-Las contribuciones son bienvenidas 🙌
-Revisa [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
